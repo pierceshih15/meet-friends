@@ -1,6 +1,8 @@
 # Meet Friends
 A simple web application for make friends
 
+Feel free to play in [here](https://pierceshih15.github.io/meet-friends/).
+
 ## Features
 - listing user from randomuser api
 - add users to your favorite list
