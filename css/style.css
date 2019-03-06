@@ -1,0 +1,28 @@
+body {
+    background-color: lightcyan;
+    background-size: cover;
+    min-width: 200px;
+}
+
+.header {
+    background-color: lightcoral;
+    text-align: center;
+}
+
+.header #title {
+    color: #000000;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.filter-body a {
+    margin: 0px 5px;
+}
+
+.card-body {
+    min-height: 120px;
+}
+
+.card-body .card-title {
+    margin: 5px;
+}
