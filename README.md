@@ -1,5 +1,5 @@
 # Meet Friends
-A simple web application for meet firends
+A simple web application for make friends
 
 ## Features
 - listing user from randomuser api
