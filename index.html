@@ -8,24 +8,72 @@
     <title>Meet Friends APP</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <!-- navigation -->
-    <header class="header">
-        <a href="#" id="title">Meet Friends APP</a>
+    <header class="header py-2">
+        <a class="refresh" href='#' id="title">Meet Friends APP</a>
     </header>
-    <!-- filter button -->
-    <div class="row filter-body mt-5 text-center justify-content-center">
-        <a class="btn btn-primary btn-lg col-sm-2" id="maleId" href="#">Male</a>
-        <a class="btn btn-danger btn-lg col-sm-2" id="femaleId" href="#">Female</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand text-center refresh" href="#">Meet Friends</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="favorite">Favorite</a>
+                </li>
+
+                <li class="nav-item">
+                    <!-- Button trigger modal for Match -->
+                    <a class="nav-link" href="#" id="quickMatch" data-toggle="modal" data-target="#show-quickMatch">Quick
+                        Match
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </ul>
+    </nav>
+
+    <!-- Modal for Match-->
+    <div class="modal fade" id="show-quickMatch" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center" id="exampleModalCenterTitle">Please Select the
+                        Gender to Match with you</h5>
+                    <div class="row ml-0 mt-3 col-md-12 col-lg-12">
+                        <button type="button" class="btn btn-primary mx-3 my-2 col-md-5 col-lg-5" id="matchMale">Male</button>
+                        <button type="button" class="btn btn-danger mx-3 my-2 col-md-5 col-lg-5" id="matchFemale">Female</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- data-panel -->
-    <h1 class="text-center m-5">Let's meet together</h1>
-    <h3 class="text-center">Pick someone to Make Firends with you！</h3>
-    <div class=" container mt-5">
+    <h2 class="text-center mt-5 data-panel-text">Pick someone to Make Firends with you！</h2>
+    <div class="container mt-5">
         <div class="row" id="data-panel">
             <!-- print user list here -->
         </div>
